@@ -1,0 +1,300 @@
+.checkout-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.checkout-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.checkout-content {
+  display: flex;
+  gap: 30px;
+}
+
+.checkout-form {
+  flex: 1;
+  background: white;
+  border-radius: 10px;
+  padding: 0px 80px; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 30px; 
+  padding-top: 10px;
+  position: relative;
+}
+
+.section-title:last-child {
+  margin-bottom: 15px;
+}
+
+.section-title:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #eee;
+}
+
+.input-field {
+  margin-bottom: 15px;
+}
+
+.input-field label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.input-field input {
+  background-color: white;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  color:black
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: flex-start;
+}
+
+.radio-option input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-top: 3px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.radio-option input[type="radio"]:checked {
+  border-color: skyblue;
+  background-color: skyblue;
+  box-shadow: inset 0 0 0 3px white;
+}
+
+.radio-option label {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.option-main {
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.option-detail {
+  font-size: 14px;
+  color: #666;
+  margin-left: 28px;
+  margin-bottom: 5px;
+}
+
+.checkbox-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  margin-top: 35px;
+}
+
+.custom-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: white; 
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  margin-right: 12px;
+  transition: all 0.2s ease;
+}
+
+.custom-checkbox:checked {
+  background-color: skyblue; 
+  border-color: skyblue;
+}
+
+.custom-checkbox:checked::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.checkbox-label {
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  user-select: none;
+}
+
+.custom-checkbox:hover {
+  border-color: #999;
+}
+
+.custom-checkbox:checked:hover {
+  background-color: #5dade2; 
+  border-color: #5dade2;
+}
+
+.order-summary {
+  width: 350px;
+  position: sticky;
+  top: 20px;
+}
+
+.summary-card {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.summary-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.order-details {
+  margin-bottom: 20px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.divider {
+  height: 1px;
+  background: #eee;
+  margin: 20px 0;
+}
+
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 16px 0;
+}
+
+.total-price {
+  color: black;
+}
+
+.purchase-btn {
+  width: 100%;
+  padding: 15px;
+  background: skyblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.purchase-btn:hover {
+  background: #5dade2;
+}
+
+.managerCall{
+  color: white
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.success-modal {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.success-modal h2 {
+  color: skyblue;
+  margin-bottom: 1.5rem;
+}
+
+.order-info {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.order-info p {
+  margin: 0.5rem 0;
+}
+
+.close-modal-btn {
+  background-color: skyblue;
+  color: white;
+  border: none;
+  margin-top: 235px;
+  margin-right: 500px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px !important;
+  transition: background-color 0.3s;
+}
+
+.close-modal-btn:hover {
+  background-color: skyblue;
+
+}

@@ -1,0 +1,126 @@
+.modal-overlay {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.product-modal {
+  background-color: white;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close-modal-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: black;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.close-modal-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.modal-content {
+  display: flex;
+  padding: 30px;
+  gap: 30px;
+}
+
+.modal-image-container {
+  width: 40%;
+  flex-shrink: 0;
+}
+
+.modal-product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.modal-info {
+  flex-grow: 1;
+}
+
+.modal-info h2 {
+  margin-top: 0;
+  color: skyblue;
+}
+
+.modal-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #d32f2f;
+  margin: 15px 0;
+}
+
+.modal-description {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.modal-actions {
+  color: skyblue;
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.reserve-btn {
+  padding: 12px 20px;
+  background-color: skyblue;
+  color: skyblue;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.reserve-btn.reserved {
+  background-color: skyblue;
+  color: white;
+}
+
+.add-to-cart-btn {
+  padding: 10px 20px;
+  background-color: #87CEEB; 
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #6CB4EE; 
+}
+
+.in-cart-label {
+  padding: 12px 20px;
+  background-color: #e9ecef;
+  color: skyblue;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+}
